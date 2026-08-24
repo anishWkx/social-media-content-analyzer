@@ -155,7 +155,7 @@ The application handles:
 * OCR failures
 * Backend processing errors
 
-## Approach
+## Workflow
 
 The application follows a simple processing pipeline:
 
@@ -174,6 +174,21 @@ Improvement Suggestions
 ```
 
 The implementation focuses on a lightweight and explainable analysis approach rather than requiring a trained machine-learning model.
+
+## 🌐 Deployment
+
+- **Frontend:** Vercel
+- **Backend:** Render
+- **Repository:** GitHub
+
+## 🧠 Approach
+
+I developed the Social Media Content Analyzer as a React and Node.js web application designed to extract and analyze content from uploaded social media documents.
+The application provides a simple drag-and-drop and file-picker interface supporting PDF and image files. Uploaded files are sent to an Express.js backend using Multer. PDF files are processed using PDF text extraction, while image files are processed using Tesseract.js OCR to extract readable text.
+The extracted content is then analyzed using a lightweight, rule-based approach. The analyzer evaluates word count, content length, hashtags, questions, emojis, calls-to-action, and the opening hook. These factors are used to calculate an engagement score and generate actionable suggestions to improve audience interaction and content quality.
+For better usability, the application includes file-type validation, a 10 MB file-size limit, loading states, and basic error handling for invalid uploads and extraction failures.
+The implementation focuses on keeping the solution lightweight, explainable, maintainable, and practical while satisfying the core requirements of document upload, PDF parsing, OCR, content analysis, and engagement improvement recommendations.
+
 
 ## Future Improvements
 
