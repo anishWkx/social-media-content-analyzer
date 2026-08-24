@@ -1,5 +1,13 @@
 # Social Media Content Analyzer
 
+## 🚀 Live Demo
+
+**Working Application:** https://social-media-content-analyzer-nine-xi.vercel.app/
+
+**Backend API:** https://social-media-content-analyzer-vsnb.onrender.com
+
+**GitHub Repository:** https://github.com/anishWkx/social-media-content-analyzer
+
 A web application that extracts text from uploaded PDF and image files and analyzes social media content to provide engagement-focused improvement suggestions.
 
 ## Features
