@@ -58,7 +58,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5001/api/extract",
+        "https://social-media-content-analyzer-vsnb.onrender.com/api/extract",
         formData,
         {
           headers: {
